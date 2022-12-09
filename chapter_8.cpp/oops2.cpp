@@ -1,0 +1,56 @@
+#include<iostream>
+#include<list>
+using namespace std;
+
+
+class youtubeChannel{
+// class is an user define datatypes
+
+public:
+string name;
+string ownerName;
+int subscribersCount;
+list<string> publishedVidoesTitle;
+
+};
+
+
+int main(){
+
+
+    youtubeChannel youtube;
+    youtube.name="IoTgrity";
+    youtube.ownerName="Devansh Shukla";
+    youtube.subscribersCount=1000;
+    youtube.publishedVidoesTitle={"Basics of IoT", "Fun with Arduino","DHT11 with Thingsspeak"};
+
+    cout<<"Name is :"<<youtube.name<<endl;
+    cout<<"Owner's name is :"<<youtube.ownerName<<endl;
+    cout<<"The current subscriber count is :"<<youtube.subscribersCount<<endl;
+    for(string publishedVedios :youtube.publishedVidoesTitle){
+        cout<<publishedVedios<<endl;
+    }
+
+    youtubeChannel youtube1;
+    youtube1.name="Geekyspace";
+    youtube1.ownerName="Bhuvaneshwari";
+    youtube1.subscribersCount=1000;
+    youtube1.publishedVidoesTitle={"Basics of IoT", "Fun with Arduino","DHT11 with Thingsspeak"};
+
+
+    cout<<"Name is :"<<youtube1.name<<endl;
+    cout<<"Owner's name is :"<<youtube1.ownerName<<endl;
+    cout<<"The current subscriber count is :"<<youtube1.subscribersCount<<endl;
+    for(string publishedVedios :youtube1.publishedVidoesTitle){
+        cout<<publishedVedios<<endl;
+    }
+
+
+
+
+
+
+
+
+    return 0;
+}
