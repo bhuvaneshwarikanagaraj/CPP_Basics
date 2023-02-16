@@ -15,7 +15,7 @@ list<string> publishedVidoesTitle;
 
 youtubeChannel(string Name , string OwnerName){
     name=Name;
-    ownerName=OwnerName;
+    ownerName=OwnerName;    
     subscribersCount=0;
 
 }
